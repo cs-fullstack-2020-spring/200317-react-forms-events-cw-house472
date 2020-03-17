@@ -9,6 +9,8 @@ class AvailableDogs extends Component {
         }
     }
     render() {
+        // dogArray isn't being passed as a an attribute to this child component
+        // and you were missing a closing div tag on line 30 
         return (
             <div>
                 <ul>
@@ -16,21 +18,21 @@ class AvailableDogs extends Component {
                     <li>Poodle</li>
                     <li>Beagle</li>
                     <li>Labrador</li>
-    
+
                 </ul>
                 {
                     this.props.dogArray.map((dog, index) => {
-                        return(
-                       <div>
-                        <p> Name: {dog.dogName} </p>    
-                        <p> Name: {dog.dogAge} </p> 
-                        <p> Name: {dog.dogBreed} </p> 
-                        <div/> 
+                        return (
+                            <div>
+                                <p> Name: {dog.dogName} </p>
+                                <p> Name: {dog.dogAge} </p>
+                                <p> Name: {dog.dogBreed} </p>
+                            </div>
                         )
                     })
-                    
+
                 }
-    
+
             </div>
         )
     }

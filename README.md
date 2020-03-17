@@ -1,4 +1,6 @@
 # 20-03-17 React Forms Events CW
+### Check out my comments in your AppContainer file and AvailableDogs 
+### Score : 2/5
 - Create a new react app called dog-adoption-site
 - Create a class based component called `AppContainer` and render it on the page
 - Create a component called `AvailableDogs` that renders on the left side of the screen and displays a list of dogs that have been put up for adoption

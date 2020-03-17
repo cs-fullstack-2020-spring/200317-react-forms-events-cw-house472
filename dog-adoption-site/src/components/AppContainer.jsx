@@ -5,22 +5,23 @@ class AppContainer extends Component {
     constructor(props) {
         super(props)
         this.state = {
-
+            // dogArray is not defined as a property of state
         }
     }
     updateDogArray = (updatedArray) => {
-        this.setState({ dogArray: updatedArray })}
-        render(){
-            return (
-                <div>
-
-                    <AvailableDogs />
-                    <AdoptionForm />
-                </div>
-            )
-        }
+        this.setState({ dogArray: updatedArray })
     }
-   
-    
-    
-    export default AppContainer;
+    render() {
+        return (
+            <div>
+
+                <AvailableDogs />
+                <AdoptionForm />
+            </div>
+        )
+    }
+}
+
+
+
+export default AppContainer;
